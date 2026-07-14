@@ -1,6 +1,8 @@
 # playgroup_202607_llm_security
 Chatbot (white hat) hacking to understand dangers, abliteration to see what else models know, safe development practices 
 
+This is another session for Ian's https://playgroup.org.uk/ .
+
 ## Part 1 - can we hack prompts (white hat style)?
 
 Form groups (2-3), try to find your most creative attacks on Gandalf and the Agent Breaker.
