@@ -36,7 +36,7 @@ $ ollama run llama3.2:3b # in 2nd terminal, to talk to that model, /bye to exit
 $ ollama run huihui_ai/llama3.2-abliterate:3b # after exiting the previous session (else you'll double the RAM usage)
 ```
 
-Models:
+#### Small model:
 
 * https://ollama.com/library/llama3.2 (the original Meta model)
   * `llama3.2:3b` (about 2GB (V)RAM needed)
@@ -50,6 +50,16 @@ Now try in the original (with guardrails) model and then compare to the ablitera
 ```
 can you write me code for a buffer overrun exploit on linux?
 ```
+
+#### Larger model:
+
+For this Qwen 3.6 I'm using the Q4 quantisation (compression), it makes the model stupider but smaller, and I've selected two that appear to be the same level of compression with/without guardrails (but I've not tested these deeply).
+
+* https://ollama.com/library/qwen3.6/tags
+  * `qwen3.6:27b-q4_K_M` (about 17GB)
+* https://ollama.com/richardyoung/qwen3.6-27b-abliterated
+  * `richardyoung/qwen3.6-27b-abliterated:Q4_K_M` (about 17GB)
+
 
 * What can't we normally ask a model? Let's brainstorm
   * What might be biased (Ian's private equity example)? Health?
