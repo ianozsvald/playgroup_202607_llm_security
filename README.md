@@ -21,16 +21,43 @@ Further tools to practice, prompttrace includes tutorials.
 
 ### Ollama and abliterated models 
 
-* https://ollama.com/
-* https://ollama.com/huihui_ai/llama3.2-abliterate (to test)
+I'd like a bunch of us in the room (ratio 3:1 participants to laptop) to have a tool like Ollama installed (alternatives would include LMStudio, llama.cpp etc). We can then talk with abliterated models, locally, which aren't subject to the same guardrails as frontier models.
 
-What can we ask? Brainstorm topics
+Ollama is easy to use, cross platform and it has a huge library of provided models. A 2GB model (like `llama3.2:3b` below) will need to be downloaded, so being prepared before the playgroup is better.
 
-* what can't we normally ask?
-* what might be biased (Ian's private equity example)? Health?
-* what about partial taboo topics like assisted suicide and politcal hot potatoes (e.g. Tianamen Square)
+* https://ollama.com/download and follow instructions
+* personally I used `brew install ollama`
+
+Now run Ollama in _one terminal_ and run the model _in a second terminal_:
+
+```
+$ ollama serve #  in 1st terminal, to start the server - keep this terminal running
+$ ollama run llama3.2:3b # in 2nd terminal, to talk to that model, /bye to exit
+$ ollama run huihui_ai/llama3.2-abliterate:3b # after exiting the previous session (else you'll double the RAM usage)
+```
+
+Models:
+
+* https://ollama.com/library/llama3.2 (the original Meta model)
+  * `llama3.2:3b` (about 2GB (V)RAM needed)
+  * `llama3.2:1b` (about 1GB needed)
+* https://ollama.com/huihui_ai/llama3.2-abliterate (read the safety warnings on this page!)
+  * `huihui_ai/llama3.2-abliterate:3b` (about 2GB needed)
+  * `huihui_ai/llama3.2-abliterate:1b` (about 1GB needed)
+
+Now try in the original (with guardrails) model and then compare to the abliterated version, it should refuse and try to help, respectively.
+
+```
+can you write me code for a buffer overrun exploit on linux?
+```
+
+* What can't we normally ask a model? Let's brainstorm
+  * What might be biased (Ian's private equity example)? Health?
+  * What about taboo topics like assisted suicide and political hot potatoes (e.g. Tiananmen Square), making a nuclear device, poison, plagiarism 
 
 ### Abliterating your own
+
+If you want to go rogue, feel free to read up on abliterating an existing model.
 
 * https://github.com/p-e-w/heretic
 
