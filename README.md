@@ -60,10 +60,13 @@ For this Qwen 3.6 I'm using the Q4 quantisation (compression), it makes the mode
 * https://ollama.com/richardyoung/qwen3.6-27b-abliterated
   * `richardyoung/qwen3.6-27b-abliterated:Q4_K_M` (about 17GB)
 
+If you want to experiment with other models, try https://ollama.com/search?q=abliterated and poke around for models you might know. Each model page shows you the model name and download size.
 
-* What can't we normally ask a model? Let's brainstorm
-  * What might be biased (Ian's private equity example)? Health?
-  * What about taboo topics like assisted suicide and political hot potatoes (e.g. Tiananmen Square), making a nuclear device, poison, plagiarism 
+On an NVIDIA machine you'll be limited to your VRAM (I have a 4GB laptop GPU, so I can run up to a 4GB model). On a Mac with e.g. 24GB unified RAM, you can run up to a 24GB model.
+
+* What can't we normally ask a model? We'll brainstorm
+* What might be biased (Ian's private equity example)? Health?
+* What about taboo topics like assisted suicide and political hot potatoes (e.g. Tiananmen Square), making a nuclear device, poison, plagiarism 
 
 ### Abliterating your own
 
