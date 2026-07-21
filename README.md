@@ -1,7 +1,7 @@
 # playgroup_202607_llm_security
 Chatbot (white hat) hacking to understand dangers, abliteration to see what else models know, safe development practices 
 
-This is another session for Ian's https://playgroup.org.uk/ .
+This is another session for Ian's https://playgroup.org.uk/ . This came from experimentation as Sam's comedy playgroup and led to me installing some de-guardrailed models -> https://speakerdeck.com/ianozsvald/amusing-abliteration?slide=2
 
 ## Part 1 - can we hack prompts (white hat style)?
 
@@ -59,6 +59,11 @@ For this Qwen 3.6 I'm using the Q4 quantisation (compression), it makes the mode
   * `qwen3.6:27b-q4_K_M` (about 17GB)
 * https://ollama.com/richardyoung/qwen3.6-27b-abliterated
   * `richardyoung/qwen3.6-27b-abliterated:Q4_K_M` (about 17GB)
+
+* https://ollama.com/huihui_ai/deepseek-r1-abliterated
+  * `huihui_ai/deepseek-r1-abliterated:70b` (43GB)
+  * `huihui_ai/deepseek-r1-abliterated:14b` (9GB) plus other sizes 
+  * https://huggingface.co/unsloth/r1-1776 (the perplexity post on how they trained it was interesting but is now a 404)
 
 If you want to experiment with other models, try https://ollama.com/search?q=abliterated and poke around for models you might know. Each model page shows you the model name and download size.
 
